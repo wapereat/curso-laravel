@@ -1,9 +1,12 @@
 <?php
 
 
-Route::get('/', function()
+Route::get('/wapereat', function()
 {
-	return View::make('hello');
+	return View::make('perfil.perfil')
+                ->with("nombre","wilson")
+                ->with("edad","24");
+        
 });
 
 Route::get('/prueba', function()
